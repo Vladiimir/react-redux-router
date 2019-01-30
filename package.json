@@ -16,10 +16,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint-staged": {
-      "*.{js,jsx}": "eslint"
+    "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
