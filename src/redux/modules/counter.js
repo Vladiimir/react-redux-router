@@ -31,3 +31,5 @@ export function decrement() {
     type: DECREMENT,
   };
 }
+
+export const getCount = state => state.count;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { increment, decrement } from '../../redux/modules/counter';
+import { increment, decrement, getCount } from '../../redux/modules/counter';
 import Counter from '../../components/Counter';
 import './style.scss';
 
@@ -13,9 +13,8 @@ const App = props => (
   </div>
 );
 
-
 const mapStateToProps = state => ({
-  count: state.counter.count,
+  count: getCount(state),
 });
 
 const mapDispatchToProps = dispatch => ({
