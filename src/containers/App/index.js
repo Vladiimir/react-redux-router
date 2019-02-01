@@ -7,7 +7,7 @@ import { loadUsers, getUsers } from '../../redux/modules/users';
 import './style.scss';
 
 class App extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     const { load } = this.props;
     load();
   }
