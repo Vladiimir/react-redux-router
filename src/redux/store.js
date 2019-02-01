@@ -6,7 +6,7 @@ import reducers from './modules/reducer';
 const Store = {
   instance: null,
 
-  getStore() {
+  getStore () {
     if (!this.instance) {
       this.instance = createStore(reducers, applyMiddleware(thunkMiddleware));
     }

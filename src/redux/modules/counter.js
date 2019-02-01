@@ -5,7 +5,7 @@ const initialState = {
   count: 0,
 };
 
-export default function reducer(state = initialState, action = {}) {
+export default function reducer (state = initialState, action = {}) {
   switch (action.type) {
     case INCREMENT:
       return {
@@ -20,13 +20,13 @@ export default function reducer(state = initialState, action = {}) {
   }
 }
 
-export function increment() {
+export function increment () {
   return {
     type: INCREMENT,
   };
 }
 
-export function decrement() {
+export function decrement () {
   return {
     type: DECREMENT,
   };
