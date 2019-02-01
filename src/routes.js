@@ -6,8 +6,8 @@ import NotFound from './components/NotFound';
 
 const Router = () => (
   <Switch>
-    <Route exact path="react-redux-router/" component={App} />
-    <Route path="react-redux-router/*" component={NotFound} />
+    <Route exact path="/" component={App} />
+    <Route path="/*" component={NotFound} />
   </Switch>
 );
 
