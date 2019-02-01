@@ -9,8 +9,10 @@ import Router from './routes';
 import store from './redux/store';
 import * as serviceWorker from './serviceWorker';
 
+const BASENAME = process.env.NODE_ENV === 'production' ? '/react-redux-router' : '';
+
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={BASENAME}>
     <Provider store={store}>
       <Router />
     </Provider>
