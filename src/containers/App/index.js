@@ -11,7 +11,8 @@ import './style.scss';
 class App extends React.Component {
   componentDidMount () {
     const { load } = this.props;
-    load();
+    console.log(load);
+    // load();
   }
 
   changeLanguage (lng) {
